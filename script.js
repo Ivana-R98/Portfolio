@@ -1,0 +1,1 @@
+// for each work hide and on hover display text related to it
