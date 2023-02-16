@@ -3,8 +3,12 @@
     padding: 0;
 }
 body {
-    color: rgb(145, 161, 255);
-    background-color: rgb(0, 23, 124);
+    color: white;
+    background-color: rgb(2, 0, 102);
+}
+h1 {
+    text-align: center;
+    margin: 1.5rem;
 }
 header {
     display: flex;
@@ -12,7 +16,11 @@ header {
     align-items: center;
     padding: 1rem;
     padding-right: 1.5rem;
-    background-color: rgb(0, 119, 255);
+    background-color: rgb(0, 2, 129);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 nav ul {
@@ -27,25 +35,33 @@ nav li {
 nav li a {
     color: aliceblue;
     text-decoration: none;
+    margin: 0.5em;
+    padding: 6px;
 }
 nav li a:hover {
-    background-color: aquamarine;
+    border-top: 4px dashed rgb(0, 102, 255);
+    border-bottom: 4px dashed rgb(0, 102, 255);
 }
 
 .intro {
+    background: linear-gradient(0deg, rgb(22, 228, 255) 0%,
+        rgb(113, 103, 250) 40%, rgb(14, 6, 121) 100%);
     display: flex;
     gap: 10%;
     justify-content: space-around;
     align-items: center;
-    width: 60%;
-    margin: auto;
-    height: 50vh;
+    padding: 0 20%;
+    margin: 0 auto 5vh;
+    height: 90vh;
 }
-.intro h1 {
-    margin-bottom: 1.5rem;
-}
+
 .intro img {
     border-radius: 50%;
+    height: 300px;
+    width: 250px;
+    -webkit-box-shadow: 0px 0px 50px 5px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 50px 5px rgba(255,255,255,1);
+    box-shadow: 0px 0px 50px 5px rgba(255,255,255,1);
 }
 
 #work {
@@ -55,28 +71,35 @@ nav li a:hover {
 }
 
 .work {
+    background-color: rgb(0, 28, 56);
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    width: 60%;
+    padding: 1rem 20%;
     margin: auto;
     justify-content: space-around;
 }
 .card {
     width: 300px;
-    height: 400px;
-    margin: 6px;
+    height: 350px;
+    padding: 6px;
 }
 .card img {
     display: block;
     margin: auto;
+    max-width: 300px;
+    height: 250px;
 }
-.card p {
+.card h2 {
     width: 250px;
     margin: 0.5rem auto;
+    color: aliceblue;
+}
+.card a {
+    text-decoration: none;
 }
 
-.about {
+.info {
     width: 80%;
     margin: auto;
     padding: 1rem;
