@@ -78,6 +78,9 @@ nav li a:hover {
         height: 200px;
         width: 175px;
     }
+    nav ul {
+        gap: 0.5rem;
+    }
 }
 
 #work, #contact {
