@@ -70,18 +70,6 @@ nav li a:hover {
     -moz-box-shadow: 0px 0px 50px 5px rgba(255,255,255,1);
     box-shadow: 0px 0px 50px 5px rgba(255,255,255,1);
 }
-@media screen and (max-width: 767px) {
-    .intro {
-        flex-direction: column;
-    }
-    .intro img {
-        height: 200px;
-        width: 175px;
-    }
-    nav ul {
-        gap: 0.5rem;
-    }
-}
 
 #work, #contact {
     width: 250px;
@@ -170,7 +158,29 @@ button:hover {
     transform: scale(1.1);
 }
 
+@media screen and (max-width: 767px) {
+    .intro {
+        flex-direction: column;
+    }
+    .intro img {
+        height: 200px;
+        width: 175px;
+    }
+    nav ul {
+        gap: 0.5rem;
+    }
+    nav li a {
+        margin: 0;
+    }
+    header {
+        padding-right: 6px;
+    }
+}
+
 @media screen and (max-width: 425px) {
+    form {
+        width: 90%;
+    }
     #Contact-Message {
         width: 200px;
         height: 6rem;
