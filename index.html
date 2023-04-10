@@ -10,7 +10,6 @@
 </head>
 <body>
     <header class="nav">
-        <div></div>
         <nav>
             <ul>
                 <li><a href="#intro">Introduction</a></li>
@@ -23,7 +22,7 @@
         <div class="left-intro">
             <h1>Hi, I'm Ivana.</h1>
             <p>
-                I'm a front-end web developer from Obrenovac, Serbia. 
+                I'm a front-end web developer from Obrenovac, Serbia.
                 I love combining the logic of code with the art of design. 
                 Aside from HTML, CSS, Bootstrap and JavaScript, I also know Photoshop and Illustrator, 
                 and a bit of WordPress and programming.
@@ -87,5 +86,22 @@
     </section>
     <footer>
     </footer>
+    <script type="text/javascript">
+        function createBubble() {
+        const body = document.querySelector('body');
+        const createElement = document.createElement('span');
+        let size = Math.random() * 60;
+
+        createElement.style.width = 20 + size + 'px';
+        createElement.style.height = 20 + size + 'px';
+        createElement.style.left = Math.random() * innerWidth + 'px';
+        body.appendChild(createElement);
+
+        setTimeout(() => {
+            createElement.remove()
+        }, 10000)
+        }
+        setInterval(createBubble, 80);
+    </script>
 </body>
 </html>
