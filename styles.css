@@ -87,7 +87,7 @@ nav li a:hover {
 .intro {
     display: flex;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     gap: 10%;
     justify-content: space-around;
     align-items: center;
