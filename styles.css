@@ -178,13 +178,12 @@ form {
 }
 
 #Contact-Name, #Contact-Email, #Contact-Message {
-    width: 200px;
+    width: 250px;
     height: 1.5rem;
     border: rgb(0, 28, 56) 3px solid;
 }
 #Contact-Message {
     height: 5.5rem;
-    width: 350px;
 }
 
 #Contact-Name:hover, #Contact-Email:hover, #Contact-Message:hover {
@@ -201,12 +200,12 @@ button:hover {
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
     .intro {
         flex-direction: column;
     }
     .intro img {
-        height: 200px;
+        max-height: 200px;
         width: 175px;
     }
     nav ul {
@@ -218,14 +217,45 @@ button:hover {
     header {
         padding-right: 6px;
     }
+    #Contact-Name, #Contact-Email, #Contact-Message {
+        width: 200px;
+    }
 }
 
 @media screen and (max-width: 425px) {
+    header {
+        font-size: 1rem;
+        padding: 16px 0;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .intro {
+        height: auto;
+        gap: 2rem;
+    }
+    .work {
+        width: 100%;
+    }
+    .work .card, .work h2 {
+        width: 200px;
+        height: fit-content;
+    }
+    .work img {
+        max-width: 200px;
+        height: 210px;
+    }
     form {
         width: 90%;
+        max-width: 200px;
+    }
+    #Contact-Name, #Contact-Email, #Contact-Message{
+        width: 150px;
     }
     #Contact-Message {
-        width: 200px;
         height: 6rem;
     }
 }
